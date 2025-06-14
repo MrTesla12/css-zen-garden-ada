@@ -1,0 +1,102 @@
+/* ================================
+   CSS Zen Garden – Ada Ayman
+   Base Styles & Resets
+   ================================ */
+
+/* ================================
+   Google Fonts Import
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+
+/* Reset all margin/padding and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Type Selector: applies to all <p> elements */
+p {
+  color: darkblue;
+  font-size: 1.25rem;
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-left: 4px solid darkblue;
+}
+/* Class Selector: applies to any element with class="highlight" */
+.highlight {
+  background-color: #fff8dc;
+  border: 2px dashed orange;
+  font-style: italic;
+  padding: 1rem;
+}
+/* ID Selector: targets the element with id="zen-participation" */
+#zen-participation {
+  background-color: lavender;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Attribute Selector: targets the <p> element with role="contentinfo" */
+p[role="contentinfo"] {
+  font-size: 0.95rem;
+  font-style: italic;
+  background-color: #f4f4f4;
+  border-top: 2px solid #ccc;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/* Pseudo-Class Selector: styles all links when hovered */
+a:hover {
+  color: crimson;
+  background-color: #ffe4e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Pseudo-Element Selector: styles the first line of any paragraph */
+p::first-line {
+  font-weight: bold;
+  color: darkred;
+  font-size: 1.3rem;
+}
+/* Descendant Combinator: styles links inside the sidebar */
+.sidebar a {
+  color: navy;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Child Combinator: styles <li> elements that are direct children of a <ul> */
+ul > li {
+  list-style-type: square;
+  color: darkolivegreen;
+  padding-left: 0.5rem;
+}
+/* Adjacent Sibling Combinator: styles <p> that come directly after an <h3> */
+h3 + p {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  border-left: 4px solid teal;
+}
+/* General Sibling Combinator: styles all <p> elements that follow an <h3> */
+h3 ~ p {
+  font-style: italic;
+  background-color: #fef9e7;
+  border-left: 4px dotted goldenrod;
+  padding: 0.75rem;
+}
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
